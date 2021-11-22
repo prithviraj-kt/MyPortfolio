@@ -1,0 +1,22 @@
+.profile{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile>img{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: -5px -5px 20px 20px #0c0c0c;
+
+}
+@media only screen and (max-width: 770px){
+    .profile{
+        height: 300px;
+    }
+    .profile>img{
+        width: 200px;
+        border-radius: 100%;
+    }
+}

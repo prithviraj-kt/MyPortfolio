@@ -1,0 +1,67 @@
+.about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.aboutButton>button{
+    border: 0px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.aboutLink{
+    border: 0px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+.aboutLink:hover{
+    background-color: rgb(255, 185, 55, 0);
+    color:orange ;
+    transition: 1s;
+    border: 7px solid orange;
+}
+@media only screen and (max-width: 1200px){
+    .aboutName>h1{
+        font-size: 25px;
+    }
+    .aboutName>h2{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 770px){
+    .about{
+        height: 100%;
+    }
+    .aboutName{
+        text-align: center;
+    }
+    .aboutName>h1{
+        font-size: 30px;
+    }
+    .aboutInfo>p{
+        text-align: center;
+    }
+    .aboutContent{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutButton>button{
+        margin-left: 0px;
+    }
+}

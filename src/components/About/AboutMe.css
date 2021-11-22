@@ -1,0 +1,102 @@
+.About{
+    background-color: rgb(26, 26, 26);
+}
+.aboutme{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    height: 100%;
+}
+.aboutmeName{
+    padding: 50px;
+    text-align: center;
+}
+.aboutmeName>h1{
+    font-weight:700;
+    font-size: 50px;
+}
+.aboutmeName>.span{
+    color: #E1AE01;
+}
+.aboutPersonalTitle{
+    padding: 20px 0px;
+    /* background-color: red; */
+}
+.aboutPersonalTitle>h1{
+    font-size: 25px;
+}
+.aboutName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.aboutName>.row{
+    /* margin: 13px 0px; */
+}
+.aboutImage{
+    display: none;
+    justify-content: center;
+}
+.aboutImage>img{
+    border-radius: 100%;
+    width: 200px;
+}
+.aboutExp{
+    margin: 10px;
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 5px;
+}
+.aboutExperience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutExperienceRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.aboutExperienceYears{
+    color: #E1AE01;
+    font-size: 70px;
+}
+.aboutFirstName{
+    color: rgb(192, 192, 192);
+}
+.aboutDownloadCv{
+    width: 200px;
+    margin: 50px 5px;
+}
+.aboutDownloadCv>button{
+    padding: 15px 0px;
+    border: 3px solid #E1AE01;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.span{
+    color: #E1AE01;
+}
+@media only screen and
+(max-width:770px){
+    .aboutName>.row>p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .aboutImage{
+        display: flex;
+    }
+    .aboutmeName{
+        display: none;
+    }
+    .aboutFirstName{
+        display: flex;
+    }
+    .aboutName>.row{
+        margin: 10px 0px 0px 40px;
+        font-size: 15px;
+    }
+    
+}

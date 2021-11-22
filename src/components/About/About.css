@@ -1,0 +1,16 @@
+.aboutSidebar {
+  position: absolute;
+  height: 100vh;
+  background-color: red;
+}
+.aboutSidebar{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .AboutContainer {
+    position: absolute;
+  }
+  .aboutSidebar{
+    display: block;
+  }
+}

@@ -83,6 +83,9 @@
     .aboutName>.row>p{
         font-size: 14px;
     }
+    .aboutPersonalTitle{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 576px){
     .aboutImage{

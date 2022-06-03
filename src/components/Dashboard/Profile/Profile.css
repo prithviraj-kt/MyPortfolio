@@ -1,0 +1,40 @@
+.ProfileProfile{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProfileDetails{
+    width: 400px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ProfileImage{
+    margin: 20px;
+    width: 150px;
+    border-radius: 100%;
+}
+.ProfileExperience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ProfileExperienceCard{
+    height: 400px;
+    width: 300px;
+    margin:20px;
+    padding: 20px;
+    background-color: palegoldenrod;
+    overflow: scroll;
+}
+.ProfileExperienceCard:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.ProfileCardDelete{
+    
+}

@@ -1,13 +1,28 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import "./AboutMe.css";
 import image from "./image.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import axios from "axios"
 function About() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
+    getProfileDetails();
   }, []);
+
+  const [profile, setProfile] = useState("");
+
+  const getProfileDetails = async () => {
+    await axios
+      .get("http://localhost:8080/getprofile/6296efba89c46824f1ba157e")
+      .then((succ) => {
+        setProfile(succ.data);
+      })
+      .catch((err) => {
+        console.log("Error occured");
+      });
+  };
+
   return (
     <div className="aboutme">
       <div className="container">
@@ -29,55 +44,54 @@ function About() {
                 <div className="row" >
                   <p>
                     <span className="aboutFirstName">First Name: </span>
-                    Prithviraj
+                    {profile.fname}
                   </p>
                 </div>
                 <div className="row" >
                   <p>
                     <span className="aboutFirstName"> Last Name: </span>
-                    Tagadinamani
+                    {profile.lname}
                   </p>
                 </div>
                 <div className="row" >
                   <p>
-                    <span className="aboutFirstName"> Age: </span>19 years
+                    <span className="aboutFirstName"> Age: </span>{profile.age}
                   </p>
                 </div>
                 <div className="row" >
                   <p>
                     <span className="aboutFirstName"> Nationality: </span>
-                    Indian
+                    {profile.nationality}
                   </p>
                 </div>
-                <div className="row" >
+                {/* <div className="row" >
                   <p>
                     <span className="aboutFirstName"> Freelancing: </span>
                     available
                   </p>
-                </div>
+                </div> */}
               </div>
 
               <div className="col-6 aboutName" data-aos="fade-left" >
                 <div className="row" >
                   <p>
-                    <span className="aboutFirstName">Country: </span>India
+                    <span className="aboutFirstName">Country: </span>{profile.country}
                   </p>
                 </div>
                 <div className="row" >
                   <p>
-                    <span className="aboutFirstName"> Phone: </span>9353968791
+                    <span className="aboutFirstName"> Phone: </span>{profile.phone}
                   </p>
                 </div>
                 <div className="row" >
                   <p>
-                    <span className="aboutFirstName"> Email: </span>
-                    prithvirajktagadinamani@gmail.com
+                    {/* <span className="aboutFirstName"> Email: </span> */}
+                    Email: <span>{profile.email}</span>
                   </p>
                 </div>
                 <div className="row" >
                   <p>
-                    <span className="aboutFirstName"> Languages: </span> Hindi,
-                    English, Kannada
+                    <span className="aboutFirstName"> Languages: </span> {profile.language}
                   </p>
                 </div>
               </div>
@@ -103,7 +117,7 @@ function About() {
                 <p>Happy customers</p>
               </div>
               <div className="col-5 aboutExp" data-aos="zoom-in">
-                <h1 className="aboutExperienceYears">10+</h1>
+                <h1 className="aboutExperienceYears">5+</h1>
                 <p>Awards won</p>
               </div>
             </div>

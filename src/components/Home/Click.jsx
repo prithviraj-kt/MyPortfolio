@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import more from "./more.png";
-import "./About.css"
-function ClickSidebar() { 
+// import "./About.css";
+import "./Click.css";
+function ClickSidebar() {
   const history = useHistory();
   const [sidebarState, setSidebarState] = useState({
     backgroundColor: "rgb(17, 9, 9, 0.7)",
@@ -18,9 +19,11 @@ function ClickSidebar() {
       setSidebarState({
         backgroundColor: "rgb(17, 9, 9, 0.7)",
         display: "block",
+        zIndex: "1",
       });
     }
   };
+
   const clickHome = () => {
     history.push("./home");
   };
@@ -34,10 +37,15 @@ function ClickSidebar() {
     history.push("./contact");
   };
   return (
-    <div>
+    <div className="clickSidebar">
+      <div className="row homeAboutButton">
+        <button onClick={changeSidebar}>
+          <img className="clickImage" src={more} alt="" />
+        </button>
+      </div>
       <div className="row aboutSidebar" style={sidebarState}>
         <div className="row aboutSidebarContent">
-        <div className="row clickButtons">
+          <div className="row clickButtons">
             <button onClick={clickHome}>
               <h2>HOME</h2>
             </button>
@@ -59,11 +67,13 @@ function ClickSidebar() {
           </div>
         </div>
       </div>
-      <div className="row aboutButton">
+
+      {/* <div className="clickButton">
         <button onClick={changeSidebar}>
           <img src={more} alt="" />
         </button>
-      </div>
+      </div> */}
+      {/* <button>Yoo</button> */}
     </div>
   );
 }

@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "../Home/Sidebar";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
-import MySkills from "./MySkills";
-import "./About.css"
+// import MySkills from "./MySkills";
+// import more from "./more.png"
+import "./About.css";
+import ClickSidebar from "./ClickSidebar";
 function About() {
+  // let sidebarStyle = {
+  //   backgroundColor: "rgb(17, 9, 9, 0.7)",
+  // };
+  // let sidebarStyle1 = {
+  //   backgroundColor: "rgb(17, 9, 9, 0.7)",
+  //   display: "none",
+  // };
+  // const [sidebarState, setSidebarState] = useState({
+  //   backgroundColor: "rgb(17, 9, 9, 0.7)",
+  //   display: "none",
+  // });
+
+  // const changeSidebar = () => {
+  //   if (sidebarState.display == "block") {
+  //     setSidebarState({
+  //       display: "none",
+  //     });
+  //   } else {
+  //     setSidebarState({
+  //       backgroundColor: "rgb(17, 9, 9, 0.7)",
+  //       display: "block",
+  //     });
+  //   }
+  // };
+
   return (
     <div className="About">
       <div className="container-fluid AboutContainer">
@@ -13,21 +40,39 @@ function About() {
             <div className="row">
               <AboutMe />
             </div>
-            <div className="row">
+            {/* <div className="row">
               <MySkills />
-            </div>
+            </div> */}
             <div className="row">
               <Experience />
             </div>
           </div>
-          <div className="col-md-1">
+          <div className="col-md-1 aboutSidebarToggle">
             <Sidebar />
           </div>
         </div>
       </div>
-      <div className="container aboutSidebar">
 
+      {/* <div className="row aboutSidebar" style={sidebarState}>
+        <div className="row aboutSidebarContent">
+          <div className="row">
+            <h2>HOME</h2>
+          </div>
+          <div className="row">
+            <h2>ABOUT</h2>
+          </div>
+          <div className="row">
+            <h2>PROJECTS</h2>
+          </div>
+          <div className="row">
+            <h2>CONTACT ME</h2>
+          </div>
+        </div>
       </div>
+      <div className="row aboutButton">
+        <button onClick={changeSidebar}><img src={more} alt="" /></button>
+      </div> */}
+      <ClickSidebar />
     </div>
   );
 }

@@ -1,16 +1,61 @@
+.About{
+  font-family: cursive;
+}
 .aboutSidebar {
   position: absolute;
   height: 100vh;
+}
+.aboutSidebar {
+  display: none;
+}
+.toggleButton {
+  display: none;
+}
+.aboutSidebarContent {
+  height: 50%;
+  color: rgb(0, 0, 0);
+}
+.aboutSidebarContent > .row > h2 {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: rgb(255, 187, 0);
+}
+.aboutSidebarContent {
+  margin-top: 100px;
+}
+.aboutButton > button {
+  width: 100px;
+  position: absolute;
+  margin: 25px;
+  position: fixed;
+}
+.aboutButton > button > img {
+  width: 40px;
+}
+.aboutClickSidebar {
+  width: 100vw;
   background-color: red;
 }
-.aboutSidebar{
-  display: none;
+.clickButtons > button {
+  background-color: orange;
+  border: 0px;
+  margin: 10px;
+  width: 90%;
+  border-radius: 20px;
 }
 @media only screen and (max-width: 767px) {
   .AboutContainer {
     position: absolute;
   }
-  .aboutSidebar{
-    display: block;
+  .aboutSidebar {
+    display: none;
+    position: fixed;
+  }
+  .toggleButton {
+    display: none;
+  }
+  .aboutSidebarToggle {
+    display: none;
   }
 }

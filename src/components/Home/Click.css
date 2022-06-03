@@ -1,0 +1,33 @@
+.homeAboutButton{
+    width: 150px;
+    padding: 10px;
+    /* background-color: orange; */
+    /* position: absolute; */
+}
+.homeAboutButton>button{
+    background-color: orange;
+    height: 50px;
+    color: white;
+    width: 100px;
+    border: 0px;
+    border-radius: 10px;
+}
+.clickSidebar{
+    display: none;
+    margin: 15px;
+}
+.clickImage{
+    width: 40%;
+}
+.clickButtons>button{
+    background-color: orange;
+    border: 0px;
+    margin: 10px;
+    width: 90%;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 770px){
+    .clickSidebar{
+        display: block;
+    }
+}

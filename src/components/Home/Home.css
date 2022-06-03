@@ -3,12 +3,18 @@
     width: 100vw;
     background: linear-gradient(70deg, #fdcd3b 30%, #202020 30%);   
     color: white; 
+    font-family: cursive;
 }
-
+.homeRow{
+    position: absolute;
+}
+.homeAbout{
+    display: flex;    
+}
 @media only screen and (max-width: 770px){
     .home{
-        background: linear-gradient(70deg, #000000 30%, #000000 30%); 
-        height: 110vh;
+        background: linear-gradient(70deg, #000000 30%, hsl(0, 0%, 0%) 30%); 
+        height: 120vh;
     }
     .homeSidebar{
         display: none;

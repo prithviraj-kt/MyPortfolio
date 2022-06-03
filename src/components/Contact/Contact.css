@@ -1,0 +1,64 @@
+.Contact{
+    font-family: cursive;
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+}
+.contactInputs{
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ContactInput{
+    /* background-color: blue; */
+    height: 50vh;
+    padding: 20px;
+
+}
+.ContactInputFields{
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+.ContactInputFields:hover{
+    border: 2px solid rgb(182, 182, 182);
+}
+.ContactTextArea{
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+
+}
+.ContactTextArea:hover{
+    transition: 0.5s;
+    border: 2px solid rgb(182, 182, 182);
+
+}
+.ContactData{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ContactData> .row{
+    height: 60vh;
+    color: white;
+}
+.ContactData>.row>h1{
+    color: orange;
+}

@@ -1,0 +1,45 @@
+.AddProfile{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+.AddProfileInputs{
+    /* background-color: red; */
+    height: 90vh;
+}
+.AddProfileLeft{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.AddProfileInput{
+    text-align: center;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 192, 74);
+    height: 50px;
+    border-radius: 20px;
+    color: rgb(136, 136, 136);
+}
+/* .AddProfileInput:hover{
+    transition: 0.3s;
+    border: 2px solid orange;
+    background-color: orange;
+    color: white;
+} */
+
+.ProfileButton{
+    width: 30%;
+    background-color: rgb(255, 187, 61);
+    border-radius: 10px;
+    height: 40px;
+    
+
+}
+.ProfileButton:hover{
+    background-color: rgb(255, 166, 0);
+    transition: .2s;
+}

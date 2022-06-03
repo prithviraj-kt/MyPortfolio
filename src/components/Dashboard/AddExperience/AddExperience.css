@@ -1,0 +1,47 @@
+.Experience{
+    background-color: rgb(255, 255, 255);
+    height: 77vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ExperienceCard{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 400px;
+    /* background-color: red; */
+}
+.ExperienceCard>input{
+    color: black;
+    outline: none;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-bottom: 2px solid orange;
+}
+.ExperienceDropdown{
+    color: gray;
+    outline: none;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-bottom: 2px solid orange;
+}
+::placeholder{
+    color: rgb(179, 179, 179);
+}
+.ExperienceAdd{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: orange;
+}
+.ExperienceAdd>h1{
+    margin-top: 20px;
+    font-size: 45px;
+}

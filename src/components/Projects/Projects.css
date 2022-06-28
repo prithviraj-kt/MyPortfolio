@@ -1,0 +1,47 @@
+.Project{
+    background-color: #202020;
+    font-family: cursive;
+}
+.ProjectName{
+    color: white;
+    /* background-color: red; */
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.ProjectName>center>h1{
+    font-size: 60px;
+}
+.ProjectDisplayProject{
+    color: white;
+    /* background-color: red; */
+    margin: 20px;
+    width: 300px;
+
+}
+.ProjectItem{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProjectItem:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.ProjectMapFUnction{
+    display: flex;
+    /* background-color: purple; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+.ProjectItem>img{
+    border-radius: 100px;
+    width: 100px;
+}

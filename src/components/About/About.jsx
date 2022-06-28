@@ -33,10 +33,10 @@ function About() {
   // };
 
   return (
-    <div className="About">
-      <div className="container-fluid AboutContainer">
+    <div className="container-fluid About">
+      <div className="AboutContainer">
         <div className="row">
-          <div className="col-md-11">
+          <div className="col-10">
             <div className="row">
               <AboutMe />
             </div>
@@ -47,7 +47,7 @@ function About() {
               <Experience />
             </div>
           </div>
-          <div className="col-md-1 aboutSidebarToggle">
+          <div className="col-2">
             <Sidebar />
           </div>
         </div>
@@ -72,7 +72,7 @@ function About() {
       <div className="row aboutButton">
         <button onClick={changeSidebar}><img src={more} alt="" /></button>
       </div> */}
-      <ClickSidebar />
+      {/* <ClickSidebar /> */}
     </div>
   );
 }
